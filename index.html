@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Code Quiz</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+</head>
+
+<body>
+  <!-- hero -->
+  <section class="hero is-small is-info">
+    <div class="hero-body has-text-centered">
+      <p class="title">Code Quiz</p>
+      <p class="subtitle">Good luck!</p>
+    </div>
+  </section>
+
+  <!-- display -->
+
+  <section id="quiz" class="container pt-2">
+    <article class="message is-info">
+      <div class="message-header is-size-5">
+        <p id="clock">You'll have just 75 seconds to do your best!</p>
+        <div class="tags has-addons">
+          <span class="tag is-info is-light">Correct:</span>
+          <span id="score" class="tag is-info is-light">0</span>
+        </div>
+      </div>
+
+      <div class="message-body is-size-4 is-flex">
+        <div class="container p-0 m-0">
+          <div id="eleBody" class="content has-text-centered">
+            This is a quiz to test your basic HTML, CSS, and JS knowledge!
+            <br>
+            You'll have 75 seconds to get as many questions as you can
+            right, and try to get the highest score possible!
+            <br>
+            Correct answers and remaining time left at the end of the quiz will add to your score.
+            <br>
+            Choose carefully, each wrong answer will take 10 seconds off the
+            clock!
+          </div>
+
+          <div id="choiceBtns" class="buttons is-flex is-flex-direction-column">
+            <button id="startQuiz" class="button is-large is-success">
+              Start!
+            </button>
+            <a href="highscores.html" id="viewHs" class="button is-medium is-success is-light is-outlined">View high
+              scores</a>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+</body>
+<script src="javascript/codequiz.js"></script>
+<script src="javascript/highscores.js"></script>
+
+</html>

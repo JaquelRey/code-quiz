@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+
+<body>
+    <section class="hero is-small is-info mb-0 pb-0">
+        <div class="hero-body has-text-centered">
+            <p class="title">
+                High Scores
+            </p>
+            <p class="subtitle">
+                Your top 5 highest scores!
+            </p>
+        </div>
+    </section>
+
+
+    <section id="quiz" class="container mt-0 pt-3">
+        <article class="message is-info">
+            <div class="message-header is-flex is-size-5">
+                <p>
+                <div class="buttons mb-0">
+                    <a href="index.html" id="returnBtn" class="button  is-success p-3 mx-0">Back to start</a>
+                    <a id="clearHsBtn" class="button  is-danger is-light is-outlined p-3 mx-0">Clear high scores</a>
+                </div>
+                </p>
+            </div>
+            <div class="message-body is-size-4 ">
+                <div id="eleBody" class="container is-fluid is-flex is-flex-direction-column is-align-items-center">
+                    <div class="content">
+                        <ol id="scoreDisplay">
+
+                        </ol>
+                    </div>
+                </div>
+        </article>
+    </section>
+
+</body>
+<script src="javascript/codequiz.js"></script>
+<script src="javascript/highscores.js"></script>
+
+</html>
